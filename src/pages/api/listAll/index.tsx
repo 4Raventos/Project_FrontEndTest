@@ -41,5 +41,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'GET') {
         res.status(200).json({ events: events });
     }
-    res.status(404).json({ error: "What are you trying to do eh?" });
+    else {
+        res.status(404).json({ error: "What are you trying to do eh?" });
+    }
 }

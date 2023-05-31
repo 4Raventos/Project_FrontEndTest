@@ -16,6 +16,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             res.status(400).json({ error: "Body Contains Errors" });
         }
     }
+    else {
+        res.status(401).json({ error: 'Method not authorized' });
+    }
     
-    res.status(401).json({ error: 'Method not authorized' });
 }
