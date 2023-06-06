@@ -1,3 +1,59 @@
 .unaClasse{
-    border: 1px solid var(--color-primary);
+    /*
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font:roboto;
+}
+
+.block{
+    display: flex;
+    width:900px;
+    justify-content: center; 
+    background: var(--color-background);
+    border-radius: 10px;
+}
+
+.block .lPart{
+    background: var(--color-primary);
+    border-radius: 10px;
+    flex:1; /*width:400px;*/
+    color: white; 
+}
+
+.lPart div{
+    margin:20px;
+}
+
+.block .rPart{
+    flex:1;
+}
+
+.block form{
+    display: flex; /* Establece el contenedor como un flex container */
+    flex-direction: column; /* Dispone los elementos en una columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    margin:20px auto;
+}
+
+#logo {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    width: 100px;
+    height: 70px;
+}
+
+.lPart span{
+    position: relative;
+    top: 200px;
+    left: -70px;
 }

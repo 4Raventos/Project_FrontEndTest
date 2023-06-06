@@ -1,3 +1,16 @@
 .button{
-    background-color: aqua;
+    border: none;
+    background: var(--color-primary);
+    border-radius: 10px;
+    color: white; /* Establece el color de la letra en blanco */
+    padding: 10px 20px;
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+    color: black;
+ }
+
+.button:active {
+    transform: scale(0.95);
 }

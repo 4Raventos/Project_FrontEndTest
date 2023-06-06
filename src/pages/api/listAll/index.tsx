@@ -31,6 +31,7 @@ const events: IEventDTO[] = [
 ];
 
 export const addEventToList = (event:IEventDTO):boolean => {
+    console.log(isValidIEvent(event));
     if(!isValidIEvent(event)) return false;
     
     events.push(event);

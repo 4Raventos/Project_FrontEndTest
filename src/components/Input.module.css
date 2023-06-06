@@ -1,0 +1,27 @@
+.input{
+    margin: 15px;
+}
+
+.input label{
+    color: var(--color-primary);
+}
+
+.input input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: var(--color-background);
+    width: 300px;
+}
+
+.input input[type="paragraph"] {
+    height: 60px;
+}
+
+.input input[type="number"] {
+    text-align: right; /* Aplica la alineación del texto a la derecha */
+    width: 240px;
+}
+
+.input input:hover {
+    background-color: var(--color-secondary)
+ }
