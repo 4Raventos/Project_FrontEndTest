@@ -8,7 +8,6 @@ import addEvent from '@/services/events';
 
 
 export default function Home() {
-
   interface EventData {
     Event_Name: string;
     Event_Title: string | null;
@@ -19,9 +18,6 @@ export default function Home() {
   let  data:EventData;
 
   const handleButtonClick = () => {
-    
-    console.log("Has clickado el boton!");
-
     const eventNameInput = document.querySelector('#event_name') as HTMLInputElement;
     const eventTitleInput = document.querySelector('#event_title') as HTMLInputElement;
     const eventDescriptionInput = document.querySelector('#event_description') as HTMLInputElement;
@@ -34,9 +30,6 @@ export default function Home() {
       Quantity: parseInt(eventQuantityInput.value),
     };
 
-    console.log(eventData);
-
-
     if(eventNameInput.value.length==0 ){
       localStorage.setItem('pMostrar', JSON.stringify(true));
       localStorage.setItem('pState', JSON.stringify(false));
@@ -44,22 +37,18 @@ export default function Home() {
       addEvent(eventData);
     }
 
-    
     /*
     eventNameInput.value ="";
     eventTitleInput.value ="";
     eventDescriptionInput.value="";
     eventQuantityInput.value="0";
-    
     return false;
     */
   }
 
   return (
     <main className={styles.unaClasse}>
-
       <PopUp/>
-
       <div className={styles.block}>
         <div className={styles.lPart}>
           <div>

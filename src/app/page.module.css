@@ -1,9 +1,4 @@
 .unaClasse{
-    /*
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,7 +19,7 @@
 .block .lPart{
     background: var(--color-primary);
     border-radius: 10px;
-    flex:1; /*width:400px;*/
+    flex:1;
     color: white; 
 }
 
@@ -37,10 +32,10 @@
 }
 
 .block form{
-    display: flex; /* Establece el contenedor como un flex container */
-    flex-direction: column; /* Dispone los elementos en una columna */
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     margin:20px auto;
 }
 

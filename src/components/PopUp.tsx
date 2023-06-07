@@ -16,13 +16,10 @@ export default function PopUp() {
   };
 
   const popUpButtonClick = () => {
-    //const popup = document.getElementById('popup');
     setIsVisible(false);
     if(form!=null){
       form.style.pointerEvents = "auto";
     }
-
-
   };
 
   if(mostrar){
@@ -31,7 +28,6 @@ export default function PopUp() {
     if(form!=null){
       form.style.pointerEvents = "none";
     }
-
 
     //setIsVisible(true);
     if(state){
@@ -49,7 +45,6 @@ export default function PopUp() {
             </div>
           </div>
         </div>
-        
       );
     }else{
       return (

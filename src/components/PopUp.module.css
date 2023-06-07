@@ -9,7 +9,6 @@
 }
 
 .popup {
-  /*background: var(--color-secondary);*/
   color: var(--color-primary);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
  
@@ -41,12 +40,11 @@
 
 .poptitle {
   position: fixed;
-  
   top: 3%;
   left: 3%;
 }
 
 .poptitle h4,
 .poptitle h5 {
-  margin: 0; /* Elimina el margen inferior de los elementos h4 y h5 */
+  margin: 0;
 }

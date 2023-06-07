@@ -18,7 +18,6 @@ export default async function addEvent(data:any): Promise<void> {
       if (!response.ok) {
         localStorage.setItem('pMostrar', JSON.stringify(true));
         localStorage.setItem('pState', JSON.stringify(false));
-        
         throw new Error('Error al enviar los datos');
         
       }else{
@@ -27,8 +26,7 @@ export default async function addEvent(data:any): Promise<void> {
       }
 
       const responseData = await response.json();
-      console.log(responseData); // respuesta del popUp
-      
+      console.log(responseData);
     } catch (error) {
       console.error('Error al enviar los datos:', error);
     }

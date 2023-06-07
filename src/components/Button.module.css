@@ -2,7 +2,7 @@
     border: none;
     background: var(--color-primary);
     border-radius: 10px;
-    color: white; /* Establece el color de la letra en blanco */
+    color: white;
     padding: 10px 20px;
 }
 
